@@ -203,15 +203,9 @@ body{
         
     }
 
-  
-   
-    /* .box img{
-   
-        width: 280px;
-        height: 160px;
-    } */
     .container .info{        
         align-items: flex-start;
+        margin-top: 106px;
     }
     .triangle{
         z-index: -1;
