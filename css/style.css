@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;400;500&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+:root {
+    
+    --primary-color: #fbfdff; 
+    --box-color-one: #f9f2d4; 
+    --box-color-two: #d3e5f5; 
+    --head-text-color: #0e196a; 
+    --text-color:rgb(89, 86, 92);
+    
+  }
+
+body{
+    background-color: var(--primary-color);
+}
+.container{
+    /* margin: 30px 0; */
+    padding: 30px 0;
+    /* border: 2px solid black; */
+    /* height: 150vh; */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .card{
+    /* border: 2px solid black;     */
+    display: flex;    
+    width: 70%;
+    height: 35rem;
+    align-items: center;
+}
+
+.card .box{
+    /* border: 2px solid black; */
+    
+    width: 100%;
+    height: 90%;
+    /* padding: 5px 10px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+    border-radius: 10px;
+    flex-grow: 1;
+
+    
+}
+.icon{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* background-color: var(--box-color-two);     */
+/* border: 1px solid black; */
+    width: 35px;
+    height: 35px;
+}
+.card .text-box{
+    width: 80% ;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    justify-content: center;
+}
+
+.card .text-box h3{
+    color: var(--head-text-color);
+}
+
+.card .text-box p{
+    color: var(--text-color);
+
+}
+.box img{
+    position: relative;
+   
+    width: 80%;
+   
+}
+
+
+
+.card .color-box-one{
+    background-color: var(--box-color-one);
+    box-shadow: 1px 2px 5px var(--box-color-one);
+}
+.card .color-box-two{
+    background-color: var(--box-color-two);
+    box-shadow: 1px 2px 5px rgb(160, 194, 221);
+}
+
+.container .info{
+    /* border: 1px solid black; */
+    
+    color: var(--head-text-color);
+    margin: 40px 0;
+    
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customers{
+    
+    width: 90%;
+    height:20rem;
+    display: flex;
+    justify-content: center;
+       
+}
+.customers .ladders{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ladders .cust_name{
+    margin: 20px 3px;
+    height: 60px;
+    width: 80%;
+    
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    box-shadow: black;  
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: rgb(147, 142, 142);
+    box-shadow: 1px 2px 10px rgb(228, 235, 240);
+}
+.ladders .cust_name p{
+    font-family: serif;
+    font-size:x-large;
+
+}
+
+/* ---------------------Triangle-------------------- */
+
+.triangle{
+    width: 350px;
+    height: 420px;
+    background-color: rgb(231, 241, 245);
+    position:absolute;
+    top: 14.75em;
+    left: -20.25em;
+    border-radius: 20px;
+    transform: rotate(45deg);
+}
+
+/* --------------------------Responsive------------------ */
+
+@media (max-width: 768px) {
+
+   .container{
+    border: 1px solid black;
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+   }
+
+   .info{
+     border: 1px solid black;
+   }
+    .container img {
+        width: 90%;
+         
+    }
+   
+    .card-one {
+      flex-direction: column-reverse;    
+      
+    /* border: 1px solid black; */
+    }
+
+    .card-two{
+        flex-direction: column;
+    }
+    .box{
+        margin: 20px 0;
+        padding: 20px 0;
+        width: 100%;
+        height: 90%;
+        
+        
+    }
+
+  
+   
+    /* .box img{
+   
+        width: 280px;
+        height: 160px;
+    } */
+    .container .info{        
+        align-items: flex-start;
+    }
+    .triangle{
+        z-index: -1;
+        background-color: aliceblue;
+    }
+  }
